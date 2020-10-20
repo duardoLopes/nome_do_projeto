@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>logado</title>
+    <style>
+      body{
+        text-align: center;
+        background: #06FFFb;
+      }
+      h1#msg{
+        border-radius: 15px;
+        box-shadow: 10px 0px 13px rgba(0,0,0,.8);
+        font-size: 90pt;
+        text-shadow: 10px 0px 13px rgba(0,0,0,.8);
+        margin-top: 50%;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="msg" onclick="mudaTexto()">
+      A mina que vc gosta te ama só que vc não sabia!
+    </h1>
+
+    <p id="p">toque no texto para saber mais!</p>
+
+    <script>
+      let msg = document.getElementById('msg')
+      let p = document.getElementById('p')
+
+      function mudaTexto(){
+        document.body.style.background = "yellow"
+        msg.innerHTML = "só que não!"
+        p.innerHTML = "kkkkkk troxa!"
+      }
+    </script>
+  </body>
+</html>
